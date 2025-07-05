@@ -1,4 +1,16 @@
 {
   "name": "picross-solver",
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.6.0",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "tsc",
+    "start": "tsc && node ./dist/main.js"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.1",
+    "@types/node": "^24.0.10"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
 }
